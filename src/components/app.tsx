@@ -3,6 +3,7 @@ import { Route, Router, RouterOnChangeArgs } from "preact-router";
 
 import Home from "../routes/home";
 import Profile from "../routes/profile";
+import SignUp from "../routes/signup";
 // import Header from "./header";
 
 if ((module as any).hot) {
@@ -24,6 +25,7 @@ export default class App extends Component {
                     <Route path="/" component={Home} />
                     {/* <Route path="/profile/" component={Profile} user="me" /> */}
                     {/* <Route path="/profile/:user" component={Profile} /> */}
+                    <Route path="/signup" component={SignUp} />
                     <Route path="/admin" component={Profile} user="admin" />
                 </Router>
             </div>
