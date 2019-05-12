@@ -1,0 +1,18 @@
+.inputField input {
+    width: 100%;
+    height: var(--base-element-height);
+    border: 1px solid var(--base-border-color);
+    border-radius: calc(var(--base-element-height) / 2);
+    margin-bottom: var(--base-space);
+
+    line-height: var(--base-element-height);
+    font-size: var(--base-font-size);
+    color: var(--base-font-color);
+    text-align: center;
+    padding: 0 calc(var(--base-element-height) / 2);
+}
+
+.inputField input:focus {
+    outline: none;
+    border: 1px solid var(--base-outline-color);
+}
