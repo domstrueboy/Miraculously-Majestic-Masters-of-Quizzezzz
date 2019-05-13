@@ -8,7 +8,7 @@ export default class Home extends Component<Props> {
         return (
             <div class={style.home}>
                 <h1>Miraculously Majestic Masters of Quizzezzz</h1>
-                <Link activeClassName={style.active} href="/signup">
+                <Link activeClassName={style.active} href="/signin">
                     <button>Let's play</button>
                 </Link>
             </div>
