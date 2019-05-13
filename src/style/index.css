@@ -1,14 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
+:root {
+    --base-background: white;
+    --base-element-height: 36px;
+    --base-border-color: darkgray;
+    --base-outline-color: black;
+    --base-space: 10px;
+    --base-font-size: 16px;
+    --base-font-color: #444;
+}
+
 html,
 body {
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
-    background: #fafafa;
+    background: var(--base-background);
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: var(--base-font-color);
+    font-size: var(--base-font-size);
     color: #444;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

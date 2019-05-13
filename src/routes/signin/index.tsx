@@ -7,19 +7,18 @@ import Button from "../../components/button";
 import InputField from "../../components/inputField";
 
 interface Props {}
-export default class SignUp extends Component<Props> {
+export default class SignIn extends Component<Props> {
     public render() {
         return (
-            <div class={style.signup}>
+            <div class={style.signin}>
                 <form action="post">
-                    <h1>Registration Form</h1>
-                    <InputField type="text" label="Your name" />
+                    <h1>Authorization Form</h1>
                     <InputField type="email" label="Your email" />
                     <InputField type="password" label="Password" />
-                    <Button text="Sign Up"/>
+                    <Button text="Sign In"/>
                 </form>
-                <Link activeClassName={style.active} href="/signin">
-                    Already registered?
+                <Link activeClassName={style.active} href="/signup">
+                    Registration
                 </Link>
             </div>
         );
