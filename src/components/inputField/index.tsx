@@ -3,13 +3,13 @@ import * as style from "./style.css";
 
 interface Props {
     type?: string;
-    placeholder?: string;
+    label?: string;
 }
 
 export default class InputField extends Component<Props> {
-    public render({ type, placeholder }: Props) {
+    public render({ type, label }: Props) {
         return (
-            <label class={style.inputField}>{placeholder || ''}
+            <label class={style.inputField}>{label || ''}
                 <input type={type || 'text'} />
             </label>
         );
