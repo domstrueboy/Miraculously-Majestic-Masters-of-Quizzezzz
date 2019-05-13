@@ -1,0 +1,27 @@
+.signin {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: calc(var(--base-space) * 1.5);
+    max-width: 320px;
+    /* border: 1px solid var(--base-border-color); */
+    /* border-radius: calc(var(--base-element-height) / 2);  */
+    margin-bottom: calc(var(--base-space) * 2);
+}
+
+.signin h1 {
+    margin-top: 0;
+    margin-bottom: calc(var(--base-space) * 4);
+}
+
+.active {
+}
