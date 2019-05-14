@@ -8,6 +8,9 @@
     --base-space: 10px;
     --base-font-size: 16px;
     --base-font-color: #444;
+    --base-inverted-font-color: #fff;
+    --base-element-color: orange;
+    --base-element-border-color: darkorange;
 }
 
 html,
