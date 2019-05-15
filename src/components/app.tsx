@@ -1,5 +1,6 @@
 import { Component, h } from "preact";
 import { Route, Router, RouterOnChangeArgs } from "preact-router";
+import Redirect from '../custom/redirect'
 
 import Home from "../routes/home";
 import Quiz from "../routes/quiz";
@@ -24,7 +25,8 @@ export default class App extends Component {
                 {/* <Header /> */}
                 <Router onChange={this.handleRoute}>
                     <Route path="/" component={Home} />
-                    {/* <Route path="/quiz/" component={Quiz} quiz="me" /> */}
+                    {/* <Route path="/quiz/" component={Quiz} quiz="me" question="1" /> */}
+                    <Redirect path="/quiz" to="/quiz/blabla/1" />
                     <Route path="/quiz/:quiz/:question" component={Quiz} />
                     <Route path="/signup" component={SignUp} />
                     <Route path="/signin" component={SignIn} />
